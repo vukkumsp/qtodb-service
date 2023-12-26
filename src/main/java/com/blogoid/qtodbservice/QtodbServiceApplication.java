@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class QtodbServiceApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Started QtodbServiceApplication");
 		SpringApplication.run(QtodbServiceApplication.class, args);
 	}
 

@@ -12,3 +12,6 @@ Tools & Sources used:
  
  - Using RabbitMQ in Spring Boot:
  	https://www.rabbitmq.com/tutorials/tutorial-one-spring-amqp.html
+ 	
+ - For Connecting service to MongoDB:
+ 	https://www.mongodb.com/compatibility/spring-boot
