@@ -1,4 +1,4 @@
-//package com.blogoid.qtodb.repository;
+//package com.blogoid.qtodbservice.repository;
 //
 //import org.springframework.data.mongodb.repository.MongoRepository;
 //
@@ -7,6 +7,3 @@
 //public interface BlogRepository extends MongoRepository<Article, Long>{
 //
 //}
-package com;
-
-
