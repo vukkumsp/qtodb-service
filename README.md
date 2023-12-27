@@ -15,3 +15,7 @@ Tools & Sources used:
  	
  - For Connecting service to MongoDB:
  	https://www.mongodb.com/compatibility/spring-boot
+ 	
+RabbitMQ Commands:
+	1. Open C:\Users\vukkumsp\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\RabbitMQ Server\RabbitMQ Command Prompt (sbin dir)
+	2. Run "rabbitmq-service.bat start" to start RabbitMQ Service

@@ -1,4 +1,4 @@
-package com.blogoid.qtodb.consumer;
+package com.blogoid.qtodbservice.consumer;
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

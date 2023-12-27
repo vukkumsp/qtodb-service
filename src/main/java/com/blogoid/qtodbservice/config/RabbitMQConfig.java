@@ -1,4 +1,4 @@
-package com.blogoid.qtodb.config;
+package com.blogoid.qtodbservice.config;
 
 
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
@@ -22,12 +23,13 @@ import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
 
+@EnableRabbit
 @Configuration
 public class RabbitMQConfig {
-//	@Bean
-//    public Queue hello() {
-//        return new Queue("q.hello");
-//    }
+	@Bean
+    public Queue hello() {
+        return new Queue("q.hello");
+    }
 	
 	@Bean
 	@Primary

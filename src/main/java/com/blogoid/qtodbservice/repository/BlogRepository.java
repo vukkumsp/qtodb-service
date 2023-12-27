@@ -7,3 +7,6 @@
 //public interface BlogRepository extends MongoRepository<Article, Long>{
 //
 //}
+package com;
+
+
