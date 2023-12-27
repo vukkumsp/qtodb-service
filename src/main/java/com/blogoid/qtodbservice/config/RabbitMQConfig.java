@@ -22,6 +22,7 @@ import org.springframework.amqp.support.converter.MessageConverter;
 //import com.rabbitmq.client.AMQP.Queue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
+import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 
 @EnableRabbit
 @Configuration
@@ -33,9 +34,14 @@ public class RabbitMQConfig {
 	
 	@Bean
 	@Primary
-	public ObjectMapper objectMapper() {
-		return new ObjectMapper();
-	}
+//	public ObjectMapper objectMapper() {
+//		return new ObjectMapper();
+//	}
+    public ObjectMapper objectMapper(Jackson2ObjectMapperBuilder builder) {
+        ObjectMapper objectMapper = builder.createXmlMapper(false).build();
+        objectMapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
+        return objectMapper;
+    }
 	
 	@Bean
 //	@Primary
